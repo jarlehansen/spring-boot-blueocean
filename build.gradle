@@ -17,6 +17,10 @@ apply plugin: 'org.springframework.boot'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
+jar {
+	baseName = 'spring-boot-blueocean'
+}
+
 repositories {
 	jcenter()
 }
