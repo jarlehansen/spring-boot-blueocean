@@ -1,9 +1,9 @@
-properties([
-        pipelineTriggers([cron('H/30 * * * *')])
-])
-
+#!/usr/bin/env groovy
 pipeline {
     agent any
+    triggers {
+        cron('* * * * *')
+    }
 
     stages {
         stage('Build') {
