@@ -14,6 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'ls build/libs/*.jar'
                 echo 'Deploying...'
             }
         }
